@@ -10,7 +10,7 @@
 ;30421755
 
 ; taken from: https://github.com/m0wfo/clojure-dynamic/blob/4e5730eabb809fee95d81cce17e61dbfaf93869d/src/main/clojure/com/mowforth/dynamic/fib.clj
-; not yet clear how exactly it applyes memoization.
+; not yet clear how exactly it applies memoization.
 (defn top-down [x y]
   (with-redefs [unique-paths (memoize unique-paths)]
     (unique-paths x y)))
